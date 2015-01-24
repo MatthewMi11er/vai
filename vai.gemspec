@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = VagrantPlugins::Vai::VERSION
   spec.authors       = ["Matthew Miller"]
   spec.email         = ["matthew@mi11er.net"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A Vagrant provisioning plugin to output a usable Ansible inventory to use outside Vagrant.}
+  #spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
