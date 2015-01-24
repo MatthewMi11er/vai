@@ -5,7 +5,7 @@ require 'vai/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vai"
-  spec.version       = Vai::VERSION
+  spec.version       = VagrantPlugins::Vai::VERSION
   spec.authors       = ["Matthew Miller"]
   spec.email         = ["matthew@mi11er.net"]
   spec.summary       = %q{TODO: Write a short summary. Required.}

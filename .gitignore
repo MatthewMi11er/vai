@@ -12,3 +12,5 @@
 *.o
 *.a
 mkmf.log
+test/.vagrant/*
+test/vagrant_ansible_inventory

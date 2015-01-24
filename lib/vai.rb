@@ -1,5 +1,12 @@
-require "vai/version"
+begin
+  require 'vagrant'
+rescue LoadError
+  raise 'The Vagrant vai provisioner must be run within Vagrant.'
+end
 
 module Vai
-  # Your code goes here...
+  # nothing to do here
 end
+
+require_relative "vai/version"
+require_relative 'vai/plugin'
