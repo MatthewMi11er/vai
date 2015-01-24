@@ -9,9 +9,17 @@ vagrant plugin install vai
 ```
 
 ## Usage
-
-TODO: Write usage instructions here
-
+Add something like this to your vagrant file
+```ruby
+config.vm.provision :vai do |ansible|
+  ansible.inventory_dir='path/to/output/inventory/'
+  #optional
+  ansible.groups = {
+    'group1' => ['box1','box2'],
+    'parentGroup1:children'     => ['group1']
+  }
+end
+```
 ## Contributing
 
 1. Fork it ( https://github.com/MatthewMi11er/vai/fork )
