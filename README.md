@@ -20,6 +20,8 @@ config.vm.provision :vai do |ansible|
   }
 end
 ```
+The provisioner will create the file `vagrant_ansible_inventory` in the given directory.
+
 ## Contributing
 
 1. Fork it ( https://github.com/MatthewMi11er/vai/fork )
