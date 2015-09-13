@@ -5,13 +5,15 @@ module VagrantPlugins
       attr_accessor :groups
       
       def initialize
-        @inventory_dir = UNSET_VALUE
-        @groups        = UNSET_VALUE
+        @inventory_dir      = UNSET_VALUE
+        @inventory_filename = UNSET_VALUE
+        @groups             = UNSET_VALUE
       end
 
       def finalize!
-        @inventory_dir = nil if @inventory_dir == UNSET_VALUE
-        @groups        = {}  if @groups == UNSET_VALUE
+        @inventory_dir      = nil if @inventory_dir == UNSET_VALUE
+        @inventory_filename = nil if @inventory_filename == UNSET_VALUE
+        @groups             = {}  if @groups == UNSET_VALUE
       end
 
       def validate(machine)
