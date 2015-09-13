@@ -2,6 +2,7 @@ module VagrantPlugins
   module Vai
     class Config < Vagrant.plugin("2", :config)
       attr_accessor :inventory_dir
+      attr_accessor :inventory_filename
       attr_accessor :groups
       
       def initialize
