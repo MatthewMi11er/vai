@@ -14,6 +14,7 @@ Add something like this to your vagrant file
 config.vm.provision :vai do |ansible|
   ansible.inventory_dir='path/to/output/inventory/'
   #optional
+  ansible.inventory_filename='vagrant_ansible_inventory'
   ansible.groups = {
     'group1' => ['box1','box2'],
     'parentGroup1:children'     => ['group1']

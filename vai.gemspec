@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Matthew Miller"]
   spec.email         = ["matthew@mi11er.net"]
   spec.summary       = %q{A Vagrant provisioning plugin to output a usable Ansible inventory to use outside Vagrant.}
-  #spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.description   = %q{A Vagrant provisioning plugin to output a usable Ansible inventory to use outside Vagrant.}
+  spec.homepage      = "https://github.com/MatthewMi11er/vai"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
